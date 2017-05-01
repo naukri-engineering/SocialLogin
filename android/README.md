@@ -6,7 +6,7 @@ This library can - Facilitate login into G+/Facebook account, Get person's infor
 
 **Getting Started**	
 
-First of all, you need to register you application on Developer consoles:
+First of all, you need to register your application on Developer consoles:
 
 For _Facebook_,
 
@@ -32,19 +32,23 @@ For Google,
 *keytool -exportcert -alias androiddebugkey -keystore path-to-debug-or-production-keystore -list -v*
 More Info: https://developers.google.com/console/help/new/#installedapplications
 
-Usage -
+**Usage**
 
-Facebook :
+Facebook:
 
 Implement or instatiate FbInteractor and just call *FacebookLoginHandler.initiateLogin()*, 
 you'll get the callbacks in respective methods of FbInteractor. 
+
 If the process is successful, FbInteractor.onSuccess is called with LoginResult. We can then parse and use the LoginResult as per our requirements.
+
 To signOut of the currently logged in person, call *FacebookLoginHandler.signOut(*) method.
 
-Google -
+Google:
 
 Similar to Facebook's method, Implement or instatiate GoogleInteractor.
+
 As this is not based on static model, you'll need to create and object of GoogleLoginHandler and then Call *googleLoginHandlerObject.initiateLogin()*. If the process is successful, *googleinteractor.loginSuccess()* would be called with login GoogleResult. 
+
 For fetching a person's profile, we can instantiate GoogleProfileInteractor and exectue FetchGoogleProfile asyncTask.
 .
 
