@@ -1,11 +1,12 @@
 # Social Library
 ***
-This open-sourced library help in accessing social account login on iOS for Facebook and GmailSignIn  with just few methods
+This is a wrapper library that helps to integrate social login for Gmail and Facebook quickly.
 
 ## Feature
-1. Can Give customize permissions for Facebook and GmailSignin
-2. Compatible with iOS 8.1 and above.
-3. Get Complete User Profile Data according to permissions.
+1. Allows to customize permissions for Facebook and GmailSignin
+2. Compatible with iOS 8.1 and above
+3. Automatic exception handling
+4. Allows to access social profile of users in just a few lines.
 
 ## Integration
 To integrate the library in your application, follow the below mentioned steps:
