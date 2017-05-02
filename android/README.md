@@ -1,23 +1,21 @@
-
-
 _**SocialLogin**_ is a library which makes fetching and parsing user data from social network easier. If you sometime have tried to work with social networks on android you would remember that this is quite cumbersome. You have to read documentation for every social platform, download their SDK or use some libraries for OAuth and make http calls by yourself. This library should make your work a lot easier for integrating ```Google+ and Facebook Login```.
 
-This library can - Facilitate login into G+/Facebook account, Get person's information and parse it.
+This library can - facilitate login with G+/Facebook account, fetch person's information and parse it.
 
 **Getting Started**	
 
-First of all, you need to register your application on Developer consoles:
+First of all, you need to register your application on respective Developer consoles:
 
 For _Facebook_,
 
 Open https://developers.facebook.com/
-1. On the top click on Apps and register as developer Then click Create a New App Select Dashboard in the left menu You should see your App ID, enter it in your AndroidManifest.xml
+1. On the top click on Apps and register as developer, then click Create a New App, Select Dashboard in the left menu. You should see your App ID, enter it in your AndroidManifest.xml
 
     <meta-data
         android:name="com.facebook.sdk.ApplicationId"
         android:value="**App ID**"
     />
-2. Go to the Settings in left menu Enter your Contact Email Click + Add Platform 
+2. Go to the Settings in left menu. Enter your Contact Email Click + Add Platform 
 3. Select Android Enter your package name,
 * To obtain key hash, use the *'keytool': keytool -exportcert -alias -keystore | openssl sha1 -binary | openssl base64*
 More info: https://developers.facebook.com/docs/android/getting-started/
@@ -36,19 +34,34 @@ More Info: https://developers.google.com/console/help/new/#installedapplications
 
 Facebook:
 
-Implement or instatiate FbInteractor and just call *FacebookLoginHandler.initiateLogin()*, 
-you'll get the callbacks in respective methods of FbInteractor. 
+Implement or instatiate FbInteractor and just call *FacebookLoginHandler.initiateLogin()*, you'll receive the callbacks in respective methods of FbInteractor. 
 
-If the process is successful, FbInteractor.onSuccess is called with LoginResult. We can then parse and use the LoginResult as per our requirements.
+If the process is successful, FbInteractor.onSuccess is called with LoginResult. You can then parse and use the LoginResult as per your requirements.
 
 To signOut of the currently logged in person, call *FacebookLoginHandler.signOut(*) method.
 
 Google:
 
-Similar to Facebook's method, Implement or instatiate GoogleInteractor.
+Similar to Facebook's method, Implement or instantiate GoogleInteractor.
 
-As this is not based on static model, you'll need to create and object of GoogleLoginHandler and then Call *googleLoginHandlerObject.initiateLogin()*. If the process is successful, *googleinteractor.loginSuccess()* would be called with login GoogleResult. 
+As this is not based on static model, you'll need to create an object of GoogleLoginHandler and then Call *googleLoginHandlerObject.initiateLogin()*. If the process is successful, *googleinteractor.loginSuccess()* would be called with login GoogleResult.
 
-For fetching a person's profile, we can instantiate GoogleProfileInteractor and exectue FetchGoogleProfile asyncTask.
-.
+For fetching a person's profile, you can instantiate GoogleProfileInteractor and exectue FetchGoogleProfile asyncTask.
+
+**Including Dependency**
+
+Add the following dependency into your gradle file - 
+_compile 'com.naukri.android:SocialLogin:1.0.0'_
+
+**Contribution**
+
+Social Login is open source. Help us by submitting merge requests, forking and playing around with the codebase.
+
+**Contact us**
+
+Get in touch with us with your suggestions, thoughts and queries at: engineering@naukri.com
+
+**License**
+
+Please see [LICENSE.md](LICENSE.md) for details.
 
