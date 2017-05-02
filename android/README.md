@@ -1,6 +1,4 @@
-_**SocialLogin**_ is a library which makes fetching and parsing user data from social network easier. If you sometime have tried to work with social networks on android you would remember that this is quite cumbersome. You have to read documentation for every social platform, download their SDK or use some libraries for OAuth and make http calls by yourself. This library should make your work a lot easier for integrating ```Google+ and Facebook Login```.
-
-This library can - facilitate login with G+/Facebook account, fetch person's information and parse it.
+This library facilitates login with G+/Facebook account, fetching user's profile.
 
 **Getting Started**	
 
