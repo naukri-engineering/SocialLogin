@@ -1,8 +1,4 @@
-# Social Library
-***
-This is a wrapper library that helps to integrate social login for Gmail and Facebook quickly.
-
-## Feature
+## Features
 1. Allows to customize permissions for Facebook and GmailSignin
 2. Compatible with iOS 8.1 and above
 3. Automatic exception handling
