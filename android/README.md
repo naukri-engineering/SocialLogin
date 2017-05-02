@@ -28,6 +28,12 @@ For Google,
 *keytool -exportcert -alias androiddebugkey -keystore path-to-debug-or-production-keystore -list -v*
 More Info: https://developers.google.com/console/help/new/#installedapplications
 
+**Add Dependency**
+
+To include this library, Add the following dependency into your gradle file,
+
+_compile 'com.naukri.android:SocialLogin:1.0.0'_
+
 **Usage**
 
 Facebook:
@@ -46,12 +52,7 @@ As this is not based on static model, you'll need to create an object of GoogleL
 
 For fetching a person's profile, you can instantiate GoogleProfileInteractor and exectue FetchGoogleProfile asyncTask.
 
-**Including Dependency**
-
-Add the following dependency into your gradle file - 
-_compile 'com.naukri.android:SocialLogin:1.0.0'_
-
-**Contribution**
+**Contributing**
 
 Social Login is open source. Help us by submitting merge requests, forking and playing around with the codebase.
 
