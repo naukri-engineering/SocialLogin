@@ -52,9 +52,9 @@ As this is not based on static model, you'll need to create an object of GoogleL
 
 For fetching a person's profile, you can instantiate GoogleProfileInteractor and exectue FetchGoogleProfile asyncTask.
 
-**Contributing**
+**Contributors**
 
-Social Login is open source. Help us by submitting merge requests, forking and playing around with the codebase.
+Sudeep Srivastava
 
 **Contact us**
 
